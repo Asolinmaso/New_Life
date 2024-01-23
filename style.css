@@ -1,0 +1,33 @@
+body{
+    background-image: url("/assets/images/Home\ \(2\).jpg");
+}
+.navbar_heading{
+      color: #b3b1b1;
+}
+.nav-bg-color{
+    background-color: #014d7b;
+    border-radius: 5px 5px 5px 5px;
+}
+.poster-bg-color{
+    background-color: #005d93;
+    opacity: 0.8;
+}
+.poster-text-color{
+    color: #B6D3DC;
+    font-size: 17px;
+}
+.heading-texy-color-2nd{
+    color:gray;
+}
+.para-highlight-text-color{
+    color: #222222;
+}
+.highlight-text{
+    color: #fe9629;
+}
+.hr-line{
+    height: 1px;
+    border:1px solid gray;
+    display: block;
+    width: 97%;
+}
