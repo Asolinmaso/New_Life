@@ -1,4 +1,4 @@
-body{
+.bg-img{
     background-image: url("/assets/images/Home\ \(2\).jpg");
 }
 .navbar_heading{
@@ -6,7 +6,7 @@ body{
 }
 .nav-bg-color{
     background-color: #014d7b;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 0px 0px;
 }
 .poster-bg-color{
     background-color: #005d93;
@@ -16,11 +16,8 @@ body{
     color: #B6D3DC;
     font-size: 17px;
 }
-.heading-texy-color-2nd{
-    color:gray;
-}
-.para-highlight-text-color{
-    color: #222222;
+.heading-text-color-2nd{
+    color:#607885;
 }
 .highlight-text{
     color: #fe9629;
@@ -30,4 +27,10 @@ body{
     border:1px solid gray;
     display: block;
     width: 97%;
+}
+.owl-numbers{
+    position: absolute;
+}
+.button-color{
+    background-color: #81bf20;
 }
