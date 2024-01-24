@@ -34,3 +34,26 @@
 .button-color{
     background-color: #81bf20;
 }
+.w-75-50{
+    width:65%
+}
+.testi-button{
+    grid-template-columns: repeat(3, 3fr);
+}
+@media only screen  and (max-width:1280px){
+    .w-75-50{
+        width:50% !important
+    }
+
+.testi-button{
+    grid-template-columns: repeat(3, 3fr);
+}
+}
+@media only screen  and (max-width:820.99px){
+    .testi-button{
+        grid-template-columns: repeat(2, 2fr);
+    }
+    .brands{
+        flex-direction: column;
+    }
+}
