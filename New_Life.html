@@ -33,25 +33,93 @@
     <div class="d-flex flex-column justify-content-center bg-img">
       <!-- <header> -->
       <div style="margin: auto" class="own-container">
-        <header class="d-flex justify-content-center mt-3">
-          <div class="w-100">
+        <header class="d-flex justify-content-start mt-3 mb-3 mb-sm-0">
+          <div class="navbar-brand ">
+            <img style="width: 50px;" class="mobile-show-nav" src="./assets/images/Home 2.png" />
+          </div>
+          <div
+            id="mySidebar"
+            class="sidebar d-block d-sm-none"
+            style="z-index: 9999"
+          >
+            <a
+              href="javascript:void(0)"
+              class="closebtn d-block d-sm-none"
+              onclick="closeNav()"
+              >×</a
+            >
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">costs</a>
+            <a href="#">Classes</a>
+            <a href="#">in the news</a>
+            <a href="#">Contact</a>
+          </div>
+
+          <div id="main">
+            <button
+              id="openbtn"
+              class="openbtn d-block d-sm-none"
+              onclick="openNav()"
+            >
+              ☰
+            </button>
+          </div>
+
+          <div class="w-100 mobile-hide-nav" style="position: relative">
             <div
               class="d-flex column-gap-4 align-items-center bg-white w-100"
               style="padding: 1rem 0 0 1rem; border-bottom: 3px solid #00446b"
             >
               <!-- 1st child -->
-              <div class="navbar-brand">
+              <div class="navbar-brand mobile-hide-nav">
                 <img src="./assets/images/Home 2.png" />
               </div>
               <!-- end of 1st child -->
 
               <!-- 2nd child -->
-              <div class="d-flex flex-column w-100" style="margin-top: 35px">
-                <h3 class="navbar_heading">
+              <div
+                class="d-flex flex-column w-100 ja"
+                style="margin-top: 35px"
+              >
+                <div
+                  class="aso"
+                  style="position: absolute; top: -10px; right: 0;display: flex;"
+                >
+                  <ul class="d-flex justify-content-end">
+                    <div
+                      class="d-flex gap-3 p-3"
+                      style="background-color: #dfdfdf"
+                    >
+                      <li class="nav-link heading-text-color-2nd">
+                        CONTACT US
+                        <span
+                          style="border-right: 1px solid gray; margin-left: 8px"
+                        ></span>
+                      </li>
+                      <li class="nav-link heading-text-color-2nd">
+                        GALLERY
+                        <span
+                          style="border-right: 1px solid gray; margin-left: 8px"
+                        ></span>
+                      </li>
+                      <li class="nav-link heading-text-color-2nd">
+                        FORMS
+                        <span
+                          style="border-right: 1px solid gray; margin-left: 8px"
+                        ></span>
+                      </li>
+                      <li class="nav-link heading-text-color-2nd">
+                        AUTO ACCIDENT
+                      </li>
+                    </div>
+                  </ul>
+                </div>
+                <h3 class="navbar_heading mobile-hide-nav">
                   OPTIMAL HEALTH AND WELLNESS THROUGH CHIROPRACTIC CARE
                 </h3>
                 <!-- <navbar> -->
-                <nav class="navbar p-0 navbar-expand-lg nav-bg-color">
+                <nav class="navbar p-0 navbar-expand-lg nav-bg-color nav-desk mobile-hide-nav">
                   <div class="w-100">
                     <div class="w-100">
                       <ul
@@ -94,18 +162,14 @@
           </div>
         </header>
 
-        <section
-          class="
-        "
-          style="position: relative"
-        >
+        <section class="mobile-corousel" style="position: relative">
           <div class="owl-carousel testimonial-carousel owl-theme">
             <div class="testimonial-item bg-light" style="position: relative">
               <div class="testimonial-text">
                 <img src="/assets/images/Banner.jpg" alt="" />
               </div>
               <div
-                class="d-flex justify-content-end"
+                class="d-flex justify-content-end mobile-hide-nav"
                 style="position: absolute; right: 0px; top: 0; z-index: 10"
               >
                 <div class="poster-bg-color px-3 pt-2">
@@ -127,7 +191,7 @@
                 <img src="/assets/images/Banner.jpg" alt="" />
               </div>
               <div
-                class="d-flex justify-content-end"
+                class="d-flex justify-content-end mobile-hide-nav"
                 style="position: absolute; right: 0px; top: 0; z-index: 10"
               >
                 <div class="poster-bg-color px-3 pt-2">
@@ -149,7 +213,7 @@
                 <img src="/assets/images/Banner.jpg" alt="" />
               </div>
               <div
-                class="d-flex justify-content-end"
+                class="d-flex justify-content-end mobile-hide-nav"
                 style="position: absolute; right: 0px; top: 0; z-index: 10"
               >
                 <div class="poster-bg-color px-3 pt-2">
@@ -171,7 +235,7 @@
                 <img src="/assets/images/Banner.jpg" alt="" />
               </div>
               <div
-                class="d-flex justify-content-end"
+                class="d-flex justify-content-end mobile-hide-nav"
                 style="position: absolute; right: 0px; top: 0; z-index: 10"
               >
                 <div class="poster-bg-color px-3 pt-2">
@@ -193,7 +257,7 @@
                 <img src="/assets/images/Banner.jpg" alt="" />
               </div>
               <div
-                class="d-flex justify-content-end"
+                class="d-flex justify-content-end mobile-hide-nav"
                 style="position: absolute; right: 0px; top: 0; z-index: 10"
               >
                 <div class="poster-bg-color px-3 pt-2">
@@ -217,7 +281,7 @@
         "
           style="position: relative"
         >
-          <div class="bg-white p-5">
+          <div class="bg-white p-5 mobile-owl-coro">
             <h3 class="heading-text-color-2nd mb-3">
               Welcome to NEW LIFE CHIROPRACTIC CENTER
             </h3>
@@ -327,9 +391,59 @@
               </div>
             </div>
 
-            <div class="mb-5 p-3" style="border: 6px solid #dfdfdf">
-              <h5>LIKE US</h5>
-              <h5>FOLLOW US</h5>
+            <div class="p-3" style="border: 6px solid #dfdfdf">
+              <h5 class="heading-text-color-2nd">LIKE US</h5>
+              <div class="d-grid" style="grid-template-columns: repeat(2, 2fr)">
+                <div class="d-flex">
+                  <img src="./assets/Home1.png" />
+                  <div style="position: relative">
+                    <img src="./assets/Home4.png" />
+                    <div
+                      style="
+                        position: absolute;
+                        top: 2px;
+                        left: 12px;
+                        color: white;
+                      "
+                    >
+                      12k
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <img src="./assets/Home2.png" />
+                  <div style="position: relative">
+                    <img src="./assets/Home4.png" />
+                    <div
+                      style="
+                        position: absolute;
+                        top: 2px;
+                        left: 12px;
+                        color: white;
+                      "
+                    >
+                      10k
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex my-4">
+                  <img src="./assets/Home3.png" />
+                  <div style="position: relative">
+                    <img src="./assets/Home4.png" />
+                    <div
+                      style="
+                        position: absolute;
+                        top: 2px;
+                        left: 12px;
+                        color: white;
+                      "
+                    >
+                      25k
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h5 class="heading-text-color-2nd">FOLLOW US</h5>
               <div class="d-flex justify-content-between">
                 <img src="./assets/images/Layer 204.png" />
                 <img src="./assets/images/Layer 205.png" />
@@ -343,7 +457,7 @@
     <section style="background-color: #0d6599">
       <div class="own-container" style="margin: auto; background-color: white">
         <div class="d-flex gap-3 justify-content-center pb-4 brands">
-          <img src="./assets/images/3.jpg" /><span class="d-flex gap-3">
+          <img src="./assets/images/3.jpg" /><span class="d-flex flex-wrap justify-content-center gap-3">
             <img src="./assets/images/4.jpg" />
             <img src="./assets/images/5.jpg" />
             <img src="./assets/images/6.jpg" />
@@ -387,61 +501,81 @@
       crossorigin="anonymous"
     ></script>
     <script>
-     $(document).ready(function () {
-  var owl = $(".owl-carousel");
-  owl.owlCarousel({
-    items: 1,
-    dots: false,
-  });
+      $(document).ready(function () {
+        var owl = $(".owl-carousel");
+        owl.owlCarousel({
+          items: 1,
+          dots: false,
+          responsive: {
+            0: {
+              items: 1, // On small screens, show only 1 item
+            },
+            600: {
+              items: 1, // On medium screens, show 2 items
+            },
+          },
+        });
 
-  $(".owl-prev").click(function () {
-    owl.trigger("prev.owl.carousel");
-  });
+        $(".owl-prev").click(function () {
+          owl.trigger("prev.owl.carousel");
+        });
 
-  $(".owl-next").click(function () {
-    owl.trigger("next.owl.carousel");
-  });
+        $(".owl-next").click(function () {
+          owl.trigger("next.owl.carousel");
+        });
 
-  var itemCount = owl.find(".owl-item").length;
-  console.log("Item count: " + itemCount);
+        var itemCount = owl.find(".owl-item").length;
+        console.log("Item count: " + itemCount);
 
-  addNumberedPagination(owl, itemCount);
-  updateActiveNumber(owl.find(".owl-item.active").index());
+        addNumberedPagination(owl, itemCount);
+        updateActiveNumber(owl.find(".owl-item.active").index());
 
-  owl.on("changed.owl.carousel", function (event) {
-    updateActiveNumber(event.item.index);
-  });
-});
+        owl.on("changed.owl.carousel", function (event) {
+          updateActiveNumber(event.item.index);
+        });
+      });
 
-function addNumberedPagination(owlCarousel, itemCount) {
-  var paginationHtml = "";
-  for (var i = 0; i < itemCount; i++) {
-    paginationHtml +=
-      '<span class="owl-num bg-white" style="border-radius: 4px;padding: 6px 12px;cursor:pointer;height:100%" data-index="' +
-      i +
-      '">' +
-      (i + 1) +
-      "</span>";
-  }
+      function addNumberedPagination(owlCarousel, itemCount) {
+        var paginationHtml = "";
+        for (var i = 0; i < itemCount; i++) {
+          paginationHtml +=
+            '<span class="owl-num" style="border-radius: 4px;background:#ffffff5e;padding: 6px 12px;cursor:pointer;height:100%" data-index="' +
+            i +
+            '">' +
+            (i + 1) +
+            "</span>";
+        }
 
-  owlCarousel.after(
-    '<div class="owl-numbers d-flex justify-content-center" style="bottom: 2rem;z-index: 99;left: 40%;column-gap:1rem">' +
-      paginationHtml +
-      "</div>"
-  );
+        owlCarousel.after(
+          '<div class="owl-numbers mobile-owl-numbers d-flex justify-content-center" style="bottom: 2rem;z-index: 99;left: 40%;column-gap:1rem">' +
+            paginationHtml +
+            "</div>"
+        );
 
-  $(".owl-num").click(function () {
-    var index = $(this).data("index");
-    owlCarousel.trigger("to.owl.carousel", index);
-    updateActiveNumber(index);
-  });
-}
+        $(".owl-num").click(function () {
+          var index = $(this).data("index");
+          owlCarousel.trigger("to.owl.carousel", index);
+          updateActiveNumber(index);
+        });
+      }
 
-function updateActiveNumber(activeIndex) {
-  $(".owl-num").removeClass("active");
-  $(".owl-num").eq(activeIndex).addClass("active");
-}
+      function updateActiveNumber(activeIndex) {
+        $(".owl-num").removeClass("active");
+        $(".owl-num").eq(activeIndex).addClass("active");
+      }
+    </script>
 
+    <script>
+      function openNav() {
+        if (document.getElementById("mySidebar").style.width == "0px") {
+          document.getElementById("mySidebar").style.width = "250px";
+        } else {
+          document.getElementById("mySidebar").style.width = "0";
+        }
+      }
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+      }
     </script>
   </body>
 </html>
